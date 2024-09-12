@@ -45,7 +45,7 @@ def main():
         email = generate_email_address(user)
         if email in emails_in_use:
             logger.info(f"User with email {email} already exists.")
-            return
+            continue
         else:
             client.update_user(user_id=user['id'], email=email)
 
