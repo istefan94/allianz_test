@@ -35,7 +35,7 @@ def setup_logger(name=__name__):
         },
     )
 
-    file_handler = logging.FileHandler(f"asdasd")
+    file_handler = logging.FileHandler(f"errorlog")
     file_handler.setLevel(logging.ERROR)  # Only log errors and critical messages to the file
     file_formatter = logging.Formatter(
         "%(asctime)s - %(levelname)s - %(module)s - %(funcName)s - %(message)s",
