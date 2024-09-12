@@ -1,0 +1,8 @@
+version: '3'
+services:
+  set-user-emails:
+    image: ghcr.io/istefan94/set-user-emails:2024-09-12
+    container_name: set-emails
+    volumes:
+      - ~/Desktop:/host-output
+    command: cp users_without_email.json /host-output
