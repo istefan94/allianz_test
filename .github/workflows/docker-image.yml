@@ -33,4 +33,4 @@ jobs:
       with:
         context: .
         push: true
-        tags: set-user-emails:${{ steps.date.outputs.date }}
+        tags: ghcr.io/istefan94/set-user-emails:${{ steps.date.outputs.date }}
